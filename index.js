@@ -1,13 +1,9 @@
-import express  from "express";
-import path from 'path'
-import fs from 'fs'
 import dotenv from 'dotenv'
-import cors from 'cors'
+import { app, router } from './src'
 
-const app = express()
-app.use(express.json())
+dotenv.config()
 
 
-app.listen(3000, () => {
+app.listen(PORT, () => {
   console.log('[Server] Server running.')
 })
