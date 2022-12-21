@@ -1,4 +1,5 @@
 import express from "express";
-const router = express.router()
+
+export const router = express.router()
 
 
